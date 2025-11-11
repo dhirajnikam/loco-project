@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { UserRole, AnalyticsDashboard } from '../types';
 import apiService from '../services/api';
+import Loading from '../components/Loading';
 import './Dashboard.css';
 
 const Dashboard: React.FC = () => {
@@ -77,7 +78,7 @@ const Dashboard: React.FC = () => {
           <div className="analytics-section">
             <h3>Dashboard Overview</h3>
             {loading ? (
-              <p>Loading analytics...</p>
+              <Loading message="Loading analytics..." />
             ) : error ? (
               <p className="error-text">{error}</p>
             ) : analytics ? (
