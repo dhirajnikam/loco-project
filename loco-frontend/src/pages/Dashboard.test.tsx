@@ -22,9 +22,8 @@ describe('Dashboard Component', () => {
     totalCandidates: 150,
     totalSessions: 320,
     completedSessions: 280,
+    totalResults: 280,
     passRate: 82.5,
-    recentCandidates: [],
-    testTypeDistribution: [],
   };
 
   const renderDashboard = (role: UserRole = UserRole.CANDIDATE) => {
@@ -49,6 +48,7 @@ describe('Dashboard Component', () => {
       lastName: 'User',
       role: UserRole.CANDIDATE,
       isActive: true,
+      isEmailVerified: false,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     };
@@ -105,6 +105,7 @@ describe('Dashboard Component', () => {
         lastName: 'User',
         role: UserRole.ADMIN,
         isActive: true,
+        isEmailVerified: true,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       };
@@ -135,6 +136,7 @@ describe('Dashboard Component', () => {
         lastName: 'User',
         role: UserRole.ADMIN,
         isActive: true,
+        isEmailVerified: true,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       };

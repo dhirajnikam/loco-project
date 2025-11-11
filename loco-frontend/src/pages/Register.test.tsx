@@ -33,6 +33,7 @@ describe('Register Component', () => {
       lastName: 'User',
       role: 'candidate',
       isActive: true,
+      isEmailVerified: false,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     });
@@ -120,6 +121,7 @@ describe('Register Component', () => {
         lastName: 'Doe',
         role: 'candidate' as any,
         isActive: true,
+        isEmailVerified: false,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
       },

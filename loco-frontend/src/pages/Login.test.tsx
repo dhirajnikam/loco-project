@@ -33,6 +33,7 @@ describe('Login Component', () => {
       lastName: 'User',
       role: 'candidate',
       isActive: true,
+      isEmailVerified: false,
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
     });
